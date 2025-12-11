@@ -1,0 +1,951 @@
+body {
+    background-color: #332E3C;
+    font-family: "Solitreo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a:link {
+    color: #c4b2bc;
+    font-size: larger;
+    font-style: normal;
+    text-decoration: none;
+    font-size: xx-large;
+    background-color: #5D4954;
+    border: double #846C5B 8px;
+    margin: auto;
+    padding: 10px;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+a:visited {
+    color: #c4b2bc
+}
+
+a:hover {
+    color: #5D4954;
+}
+
+#logo {
+    width: 100px;
+}
+
+nav {
+    background-color: #2c1964;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    padding: 20px;
+    font-family: "Gluten", cursive;
+    font-weight: 200;
+    font-style: normal;
+    position: sticky;
+}
+
+.contact {
+    background-color: #332E3C;
+    border: #d8d4f2 3px solid;
+}
+
+#title {
+    position: absolute;
+    right: 40px;
+    z-index: 2;
+    top: 1rem;
+    color: #d8d4f2;
+    font-size: xx-large;
+    right: 8rem;
+}
+
+.Reviews {
+    text-align: center;
+    color: #c4b7be;
+}
+
+.HISTORY {
+    font-size: x-large;
+    color: white;
+    margin: auto;
+}
+
+.my-nav {
+    background-color: #2c1964;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) brightness(200%);
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 25px;
+}
+
+footer {
+    background-color: #2c1964;
+    color: #d8d4f2;
+    padding: 40px 20px;
+}
+
+footer .card {
+    background-color: #2c1964;
+    border: none;
+    color: #d8d4f2;
+}
+
+footer .card-header {
+    background-color: #2c1964;
+    color: #d8d4f2;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #444;
+}
+
+footer .card-body {
+    color: #d8d4f2;
+}
+
+footer .card-body .btn {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    background-color: #5D4954;
+    border: 1px solid #846C5B;
+}
+
+footer .card-body .btn:hover {
+    background-color: #846C5B;
+    border-color: #5D4954;
+}
+
+.button-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+a.btn-reachout {
+    background-color: white !important;
+    color: #2c1964 !important;
+    padding: 15px 30px;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    bottom: 1rem;
+}
+
+a.btn-reachout:hover {
+    background-color: #ffffffcb;
+    border-color: #ffffffcb;
+    transform: scale(1.05);
+}
+
+#slogan {
+    position: absolute;
+    right: 40px;
+    z-index: 2;
+    top: 4rem;
+    color: #d8d4f2;
+    right: 5rem;
+}
+
+/* -------------------------------
+   CAROUSEL LAYOUT
+--------------------------------*/
+.carousel-learn-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #2c1964;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: 0.3s ease;
+}
+
+.carousel-learn-btn:hover {
+    background-color: #ffffffcc;
+    transform: scale(1.05);
+}
+
+.carousel-wrapper {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 20px;
+}
+
+.carousel-content {
+    background-color: #5D4954;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ------------------------------
+   DESKTOP ARROW POSITION
+--------------------------------*/
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-20%);
+    width: 50px;
+    /* larger tap area */
+    height: 50px;
+    z-index: 10;
+}
+
+/* Move arrows outward slightly */
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+/* Make actual icon bigger */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+}
+
+/* Card Container */
+.consultation-card {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: "Solitreo", cursive;
+}
+
+/* Top Header Banner */
+.consultation-header {
+    background: #2c1964;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Form Layout */
+.consultation-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.consultation-form input,
+.consultation-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+.consultation-form input:focus,
+.consultation-form textarea:focus {
+    border-color: #2c1964;
+}
+
+/* Submit Button */
+.consultation-btn {
+    background: #846C5B;
+    color: white;
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.consultation-btn:hover {
+    background: #846C5B;
+}
+
+.forensic-section,
+.tax-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 40px;
+}
+
+.forensic-box,
+.tax-box {
+    background-color: #5D4954;
+    /* matches your site theme */
+    color: #ffffff;
+    max-width: 900px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: "Solitreo", cursive;
+}
+
+.forensic-box h2,
+.tax-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Gluten", cursive;
+    color: #d8d4f2;
+}
+
+.forensic-box p,
+.tax-box p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.consultation-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.consultation-card-large {
+    background: #5D4954;
+    border-radius: 15px;
+    padding: 60px 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.consultation-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #d8d4f2;
+    font-family: "Gluten", cursive;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #d8d4f2;
+    font-size: 1.1rem;
+    background: #ffffff;
+    color: #332E3C;
+    font-family: inherit;
+}
+
+.consultation-form input:focus,
+.consultation-form textarea:focus {
+    border-color: #846C5B;
+    outline: none;
+}
+
+.consultation-btn {
+    width: 100%;
+    background: #846C5B;
+    color: white;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.consultation-btn:hover {
+    background: #846c5be1;
+    transform: scale(1.02);
+}
+
+.bio-section {
+    padding: 80px 20px;
+    background: #c4b2bc;
+}
+
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+.bio-text {
+    flex: 1;
+    color: #1f3b5b;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.bio-text h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bio-text .titles {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.bio-image-wrapper {
+    flex: 0 0 350px;
+    text-align: center;
+    position: relative;
+}
+
+.bio-image-circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #2d83b5 0%, #e9af3f 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bio-image {
+    width: 95%;
+    border-radius: 50%;
+}
+
+.badges {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.badges img {
+    height: 55px;
+}
+
+.team-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.team-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #ffffff;
+    /* Change if your theme uses lighter/darker text */
+    text-align: center;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.team-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.team-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.3;
+}
+
+.video-section {
+    padding: 60px 0;
+    text-align: center;
+    background: transparent;
+    /* Your site already has a purple background */
+}
+
+.video-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    position: relative;
+}
+
+.video-title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #7baaf7;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+.video-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 480px;
+    text-align: center;
+}
+
+.video-frame {
+    width: 100%;
+    height: 270px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.video-caption {
+    color: #ffffff;
+    font-size: 1rem;
+    max-width: 450px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.video-caption::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: #7baaf7;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.lynette-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.lyn-btn {
+    background: #ffffff;
+    color: #000;
+    padding: 18px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.2s ease-in-out;
+    font-size: 2rem;
+}
+
+.lyn-btn:hover {
+    background: #f0f0f0;
+}
+
+.taxcure-inline {
+    width: 34px;
+    height: 34px;
+}
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #d8d4f2;
+}
+
+.faq-category {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #c4b2bc; /* Purple theme */
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    border: 1px solid #d8d4f2;
+    border-radius: 8px;
+    padding: 0;
+    margin: 14px 0;
+    overflow: hidden;
+}
+
+/* Summary (question) */
+.faq-item summary {
+    cursor: pointer;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #d8d4f2;
+    list-style: none;
+}
+
+.faq-item summary:hover {
+    background: #f1ecff;
+}
+
+/* Remove default triangle */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Add custom arrow */
+.faq-item summary::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s ease;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Rotate arrow on open */
+.faq-item[open] summary::after {
+    transform: rotate(-180deg);
+}
+
+/* Answer text */
+.faq-item p {
+    padding: 16px;
+    margin: 0;
+    background: #c4b2bc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+
+    .bio-container {
+        flex-direction: column;
+        /* Stack image above text */
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .bio-text {
+        font-size: 0.95rem;
+        /* Slightly smaller text */
+        line-height: 1.55;
+        padding: 0 20px;
+        /* Add breathing room */
+    }
+
+    .bio-text h2 {
+        font-size: 1.8rem;
+        /* Shrink title */
+        line-height: 1.2;
+    }
+
+    .bio-text .titles {
+        font-size: 1.2rem;
+    }
+
+    .bio-image-wrapper {
+        flex: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bio-image-circle {
+        width: 220px;
+        /* Smaller circle */
+        height: 220px;
+    }
+
+    .bio-image {
+        width: 92%;
+    }
+
+    .badges {
+        margin-top: 10px;
+        gap: 16px;
+    }
+
+    .badges img {
+        height: 40px;
+        /* Reduce badge size */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .lynette-buttons {
+        flex-direction: column;
+        /* Stack vertically */
+        align-items: center;
+        /* Center horizontally */
+        width: 100%;
+        gap: 18px;
+        /* More space between buttons */
+    }
+
+    .lyn-btn {
+        width: 90%;
+        /* Make buttons full width */
+        max-width: 350px;
+        /* But not too huge */
+        font-size: 1.2rem;
+        /* Slightly smaller on mobile */
+        padding: 14px 22px;
+        /* Adjust padding for phones */
+        justify-content: center;
+        /* Center text/icon */
+    }
+
+    .lyn-btn i {
+        font-size: 1.6rem;
+        /* Scales icon slightly smaller */
+    }
+
+    .taxcure-inline {
+        width: 26px;
+        /* Scales icon */
+        height: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Make title smaller and keep spacing balanced */
+    .video-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        padding: 0 20px;
+    }
+
+    /* Grid becomes a single column */
+    .video-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Each video card takes full width of screen */
+    .video-card {
+        width: 95%;
+        max-width: 500px;
+    }
+
+    /* Make iframe responsive */
+    .video-frame {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .video-caption {
+        font-size: 0.95rem;
+        padding: 0 15px;
+    }
+
+    .team-title {
+        font-size: 1.8rem;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .team-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .team-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .consultation-card-large {
+        padding: 40px 25px;
+    }
+
+    .consultation-header {
+        font-size: 1.8rem;
+    }
+
+    .consultation-form input,
+    .consultation-form textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .consultation-btn {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .consultation-card-large {
+        padding: 30px 20px;
+    }
+
+    .consultation-header {
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .forensic-box {
+        padding: 25px;
+    }
+
+    .forensic-box h2 {
+        font-size: 2rem;
+    }
+
+    .forensic-box p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Friendly */
+@media (max-width: 500px) {
+    .consultation-card {
+        margin: 20px;
+    }
+
+    .consultation-header {
+        font-size: 1.4rem;
+    }
+}
+
+/* ------------------------------
+   MOBILE-FRIENDLY ARROWS
+--------------------------------*/
+@media (max-width: 768px) {
+
+    .tax-box,
+    .consultation-card {
+        padding: 25px 20px;
+    }
+
+    .tax-box p {
+        font-size: 1rem;
+    }
+
+    .consultation-header {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .tax-box,
+    .consultation-card {
+        padding: 20px 15px;
+    }
+
+    .consultation-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* bring arrows inward so they don’t get cut off */
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 1371px) and (min-width: 976px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    .navbar-nav {
+        gap: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        min-width: 150px;
+    }
+}

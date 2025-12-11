@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bed and Breakfast</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Matemasie&family=Sanchez:ital@0;1&family=Short+Stack&family=Sue+Ellen+Francisco&family=Twinkle+Star&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav><a href="index.html">Home</a>☕<a href="rooms.html">Rooms & Amenities</a>
+    <h1 class="request">The Snug Nook!!!</h1>
+    ☕<a href="request.html">Info Request Form</a>
+  </nav>
+  <div class="container">
+  <form action="thankyou.html" method="get">
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" required>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="email">Email:
+        <input type="email" name="email" id="email" placeholder="Email" required> </label>
+      <label for="phonenumber">Mobile Number:
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX-XXX-XXXX" required>
+      </label>
+      <label for="reachout">Best way to reach you:
+        <select name="reachout" id="reachout">
+          <option value="phone">Mobile Phone Call</option>
+          <option value="Text">Mobile Phone Text</option>
+          <option value="Email">Email</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <label for="Other">If you choose other:
+        <textarea name="Other" id="Other"></textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+      <Legend>Rooms</Legend>
+      <label for="datebeg">Beginning Date:
+        <input type="date" name="datebeg" id="datebeg" required> </label>
+      <label for="dateend">End Date:
+        <input type="date" name="dateend" id="dateend" required> </label><br>
+      <input type="radio" id="single" name="rooms" value="single" required>
+      <label for="single">Single 90$</label><br>
+      <input type="radio" id="double" name="rooms" value="double">
+      <label for="double">Double 120$</label><br>
+      <input type="radio" id="queen" name="rooms" value="queen">
+      <label for="queen">Queen 150$</label> <br>
+      <input type="radio" id="king" name="rooms" value="king">
+      <label for="king">King 180$</label> <br>
+    </fieldset>
+    <fieldset>
+      <legend>Extra Amenities</legend>
+      <input type="checkbox" id="amneity1" name="amneity1" value="massage">
+      <label for="amneity1">60 Minute Massage 100$:</label><br>
+      <input type="checkbox" id="amneity2" name="amneity1" value="Pinic">
+      <label for="amneity2">Romantic Picnic 50$:</label><br>
+      <input type="checkbox" id="amneity3" name="amneity3" value="champange">
+      <label for="amneity3">Champange 30$:</label> <br>
+      <input type="checkbox" name="amneity4" id="amneity4" value="late">
+      <label for="amneity4">Late Checkout 30$:</label>
+    </fieldset>
+    <input type="submit">
+  </form>
+  </div>
+
+</body>
+
+</html>

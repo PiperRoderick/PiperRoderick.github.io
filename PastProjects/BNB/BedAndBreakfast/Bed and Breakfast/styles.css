@@ -1,0 +1,227 @@
+nav {
+    background-color: #e6d1c1;
+    position: sticky;
+    /*posittion is sticky to stay on screen in same place when I scroll*/
+    border: double #f9e8d2;
+    width: 75%;
+    margin: auto;
+    box-shadow: 2px 5px 5px;
+    z-index: 5;
+    /*So the Nav bar shows over everything else*/
+    top: 0px;
+    border-radius: 5px;
+
+}
+
+body {
+    background-color: #4e3b31;
+}
+
+a:link {
+    color: #a76e5d;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    border: dotted #d1b7a0;
+}
+
+a:visited {
+    color: #a76e5d
+}
+
+a:hover {
+    color: #4e3b31;
+}
+
+.title {
+    color: #e6d1c1;
+    font-family: "Gluten", cursive;
+    font-size: xx-large;
+    position: fixed;
+    /*so I can adjust the position as I see fit*/
+    top: 50px;
+    right: 40%;
+}
+
+img {
+    /*too make all my images look pretty and be easier to move around and adjust*/
+    width: 300px;
+    border: dashed #f9e8d2;
+    padding: 10px;
+    position: relative;
+}
+
+
+#mountain {
+    position: relative;
+    left: 10px;
+    top: 70px;
+}
+
+/*So I can make the main page less bland by moving around images making it less cluttered and boring*/
+
+#book {
+    position: relative;
+    left: 10%;
+    top: 150px;
+}
+
+#outside {
+    position: relative;
+    left: 20%;
+    top: 70px;
+}
+
+#lake {
+    position: relative;
+    left: 30%;
+    top: 150px;
+}
+
+h3 {
+    position: absolute;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    z-index: 3;
+    /*so all the words appear on top of the images but still below the nav bar*/
+    position: fixed;
+    color: #000000;
+}
+
+.Mountains {
+    left: 93px;
+    top: 30%;
+}
+
+.Food {
+
+    left: 31%;
+    top: 41%;
+}
+
+.books {
+    right: 32%;
+    top: 39%;
+}
+
+.Lakes {
+
+    right: 7%;
+    top: 37%;
+}
+
+#Bags {
+    color: #e6d1c1;
+    font-family: "Gluten", cursive;
+    font-size: xx-large;
+    position: fixed;
+    left: 40%;
+    bottom: 10%;
+    /*A cute little icon with the memo at the bottom in the middle*/
+}
+
+table,
+tr,
+th,
+td {
+    border: 10px double #e6d1c1;
+    border-collapse: collapse;
+    opacity: 0.85;
+}
+
+table {
+    margin: 120px 0px 0px 200px;
+    width: 80%;
+    /*so the table is not taking over the entire screen*/
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+    color: #4e3b31;
+}
+
+tr:nth-child(even) {
+    /*That was only even are some color and odds are another color making the whole table more appealing*/
+    background-color: #a76e5d;
+}
+
+tr:nth-child(odd) {
+    background-color: #d1b7a0;
+}
+
+h1 {
+    color: #e6d1c1;
+    font-family: "Gluten", cursive;
+    font-size: xx-large;
+}
+
+ul {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-large; /*The font size is x-large so it is easier to read for thoese with vision problems*/
+    color: #f9e8d2;
+}
+
+
+main {
+    position: relative; /*That was I can use the absolute positioning on other items*/
+}
+
+.Single {
+    position: absolute; /*is located there due to the fact its ancestor is not a static so it stays in that area*/
+}
+
+p {
+    font-size: x-large;
+    position: absolute;
+}
+
+.single {
+    left: 5%;
+    bottom: 30%;
+}
+
+.double {
+    left: 25%;
+    bottom: 10%;
+}
+
+.queen {
+    left: 40%;
+    bottom: 20%;
+}
+
+.king {
+    left: 55%;
+    bottom: 60%;
+}
+
+.request {
+    color: #e6d1c1;
+    font-family: "Gluten", cursive;
+    font-size: xx-large;
+    position: fixed;
+    bottom: 50px;
+    right: 40%;
+    /*same as all the other titles except at the bottom cause I thought it looked better*/
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    background-color: #e6d1c1;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-large;
+    color: #a76e5d; /*so the form and the thank you letter match the rest of the website staying consistent*/
+}

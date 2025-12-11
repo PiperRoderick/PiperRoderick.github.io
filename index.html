@@ -6,32 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Leckerli+One&family=Solitreo&display=swap"
+        rel="stylesheet">
+    <!--Piper Catilyn Roderick, CIS-130-101 Intro to WebDev-->
 </head>
 
 <body>
-    <input type="checkbox" id="menu-toggle">
 
-    
-    <label for="menu-check" class="menu-icon" style="font-size: 64px;">&#9776;</label>
-        <input type="checkbox" id="menu-check">
-    <nav>
+    <nav class="navbar">
 
-        <ul class="menu">
-            <li>❤️ <a href="index.html">Home</a></li>
-            <li>❤️<a href="projects.html">Previous Projects</a> </li>
-            <li>❤️ <a href="Contact.html">Contact Information</a></li>
+        <div class="logo">
+            <h1>Piper Roderick A Future Web Devoloper</h1>
+        </div>
 
+        <!-- Checkbox Toggle -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <!-- Nav Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Previous Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
         </ul>
 
-
-        <div class="title">
-            <h1>All About Piper Roderick</h1>
-        </div>
     </nav>
-   <main>
-    
-   </main>
+    <main>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <h1>Hi, my name is <span class="highlight">Piper Roderick</span></h1>
+
+            <p>
+                I am a Computer Science Major, and I have been creating websites for about
+                <strong>5 months</strong> now.
+            </p>
+        </section>
+
+        <!-- Future Goals Section -->
+        <section class="future">
+            <h2>My Future Goals</h2>
+
+            <p>
+                In the future, as I said before, I hope to become successful in the IT industry so that
+                I can support a family. I hope to have kids — at least one boy and one girl.
+            </p>
+
+            <p>
+                On top of that, I hope to foster animals and make them feel loved.
+            </p>
+
+            <p>
+                I am excited for this year as I continue to learn coding through developing websites.
+                By the end of the year, I hope I can make a custom website of my dreams.
+            </p>
+        </section>
+
+    </main>
 </body>
 
 </html>
