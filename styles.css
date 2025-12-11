@@ -278,3 +278,118 @@ section:hover {
         left: 0;
     }
 }
+/* Contact Section */
+.contact {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #acc6c7; /* Misty Blue */
+    border-left: 10px solid #725446; /* Puce accent stripe */
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Section title */
+.contact .section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #725446; /* Puce */
+}
+
+/* Intro paragraph */
+.contact-intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Contact form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #725446; /* Puce */
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1d333e; /* Charcoal */
+    box-shadow: 0 0 6px #acc6c7; /* Misty Blue glow */
+}
+
+/* Submit button */
+.contact-form button {
+    background-color: #725446; /* Puce */
+    color: #e2ceb6; /* Peach */
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1d333e; /* Charcoal on hover */
+    color: #acc6c7; /* Misty Blue text */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact {
+        margin: 50px 20px;
+        padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+    }
+}
+/* Add spacing for icons */
+.contact-info i {
+    margin-right: 8px;
+    color: #725446; /* Puce */
+}
+
+/* Social links icons */
+.social-links i {
+    margin-right: 6px;
+    color: #725446;
+    transition: color 0.3s;
+}
+
+.social-links a:hover i {
+    color: #acc6c7; /* Misty Blue on hover */
+}
+
+/* Social links text */
+.social-links a {
+    color: #1d333e; /* Charcoal */
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #acc6c7; /* Misty Blue text on hover */
+}

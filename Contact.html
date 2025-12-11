@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info</title>
     <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Leckerli+One&family=Solitreo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Leckerli+One&family=Solitreo&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar">
 
@@ -28,6 +33,55 @@
         </ul>
 
     </nav>
-    
+    <main>
+        <section class="contact">
+            <!-- Section title -->
+            <h2 class="section-title gluten-bold">Get in Touch</h2>
+            <p class="contact-intro solitreo-regular">
+                I’d love to hear from you! Fill out the form or use the contact info below.
+            </p>
+
+            <!-- Two-column layout -->
+            <div class="contact-container">
+
+                <!-- Left column: Contact Info -->
+                <div class="contact-info">
+                    <h3 class="solitreo-regular">Contact Information</h3>
+
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> piper.roderick2007@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong>(573)-410-2197</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>City:</strong> Springfield MO
+                    </p>
+
+                    <p><i class="fas fa-share-alt"></i> <strong>Social:</strong></p>
+                    <ul class="social-links">
+                        <li><a href="https://github.com/PiperRoderick?tab=repositories" target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right column: Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your message..."
+                            required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
 </body>
+
 </html>
